@@ -7,6 +7,6 @@ spec:
   selector:
     app: trend-app
   ports:
-    - port: 80
-      targetport: 3000
-      protocol: TCP
+    - port: 80        # <-- Ensure this is 'port'
+      targetPort: 3000
+      protocol: TCP   # <-- Optional, but if included, it must be the text "TCP", not a number
